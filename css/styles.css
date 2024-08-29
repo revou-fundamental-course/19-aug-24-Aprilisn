@@ -79,24 +79,25 @@ nav{
 }
 
 .container {
-    display: flex; /* Menggunakan Flexbox untuk menampilkan elemen anak secara horizontal */
-    justify-content: space-between;
-    align-items: center; /* Menyelaraskan item di tengah */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch; 
     padding: 20px;
 }
 
 .form-container, .result-container {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Mengatur lebar elemen form dan hasil */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Mengatur lebar elemen form dan hasil */
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-weight: bold;
+    font-size: 12px;
 }
 
 input[type="text"],
@@ -104,21 +105,23 @@ input[type="date"],
 select,
 textarea {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
+    padding: 4px;
+    margin-bottom: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 12px;
 }
 
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 6px 12px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    font-size: 12px;
 }
 
 button:hover {
@@ -126,8 +129,8 @@ button:hover {
 }
 
 .result-container {
-    width: 45%;
-    min-height: 200px; /* Menambahkan tinggi minimum untuk tampilan yang lebih baik */
+    width: 300px;
+    min-height: 150px; /* Menambahkan tinggi minimum untuk tampilan yang lebih baik */
 }
 
 .slide {

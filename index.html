@@ -15,10 +15,10 @@
         </header>
 
         <section class="nav-container">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#" class="nav-item">Our Profile</a>
-            <a href="#" class="nav-item">Achievment</a>
-            <a href="#" class="nav-item">Message Us</a>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#achievment" class="nav-item">Achievment</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
         </section>
     </nav>
 
@@ -26,11 +26,11 @@
 
     <main>
         <article>
-            <header>
-                <h1>Welcome user, to our website!</h1>
+            <header id="home">
+                <h1>Selamat Datang Calon Mahasiswa Baru di IKIP Siliwangi!</h1>
             </header>
 
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Smart and Innovative Campus</p>
 
             <div class="slideshow-container">
                 <div class="slide fade">
@@ -43,9 +43,21 @@
                     <img src="assets/3.jpg" alt="Image 3" style="width:100%">
                 </div>
             </div>
+
+            <h2>Visi</h2>
+            <p>IKIP Siliwangi menjadi perguruan tinggi yang unggul dan berdaya saing global dalam inovasi pendidikan yang berbasis penelitian, teknologi dan kewirausahaan pada tahun 2037.</p>
+            <h2>Misi</h2>
+            <ol type="1">
+                <li>Menyelenggarakan pendidikan, pelatihan, pembelajaran, dan pembimbingan yang inovatif, unggul, dan berdaya saing global berbasis penelitian, teknologi dan kewirausahaan yang bersifat adaptif.</li>
+                <li>Menyelenggarakan penelitian yang inovatif unggul dan berdaya saing global dalam inovasi pendidikan yang berbasis teknologi dan kewirausahaan.</li>
+                <li>Menyelenggarakan pengabdian yang inovatif unggul dan berdaya saing global dalam inovasi pendidikan yang berbasis penelitian, teknologi dan kewirausahaan.</li>
+                <li>Mengembangkan kemitraan untuk mendukung keunggulan, daya saing global, inovasi dalam pendidikan yang berbasis penelitian, teknologi dan kewirausahaan.</li>
+            </ol>
         </article>
 
-        <section>
+        <hr />
+
+        <section id="our-profile">
             <header>
                 <h1>Our Profile</h1>
             </header>
@@ -78,38 +90,40 @@
             </section>
         </section>
 
-        <section>
+        <hr />
+
+        <section id="message-us">
             <header>
                 <h1>Message Us</h1>
             </header>
 
-            <div class="container">
-                <!-- Form Container -->
-                <div class="form-container">
-                    <form id="userForm">
-                        <label for="name">Nama:</label>
-                        <input type="text" id="name" name="name" required><br><br>
-        
-                        <label for="dob">Tanggal Lahir:</label>
-                        <input type="date" id="dob" name="dob" required><br><br>
-        
-                        <label for="gender">Jenis Kelamin:</label>
-                        <select id="gender" name="gender" required>
-                            <option value="">Pilih...</option>
-                            <option value="Laki-laki">Laki-laki</option>
-                            <option value="Perempuan">Perempuan</option>
-                        </select><br><br>
-        
-                        <label for="message">Pesan:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-                        <button type="button" onclick="submitForm()">Submit</button>
-                    </form>
-                </div>
-        
-                <!-- Result Container -->
-                <div class="result-container" id="result"></div>
-            </div>
+           <div class="container">
+        <!-- Form Container -->
+        <div class="form-container">
+            <form id="userForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Pilih...</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select><br><br>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+
+        <!-- Result Container -->
+        <div class="result-container" id="result"></div>
+    </div>
 
         </section>
     </main>
