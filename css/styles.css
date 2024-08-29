@@ -35,6 +35,56 @@ nav{
     -o-border-radius: 8px;
 }
 
+.toggle-paragraph {
+    display: none;
+}
+
+.toggle-header {
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat di atas elemen */
+    color: black; /* Warna teks default */
+    transition: color 0.3s; /* Transisi halus saat warna berubah */
+}
+
+/* Mengubah warna teks saat kursor di atas header */
+.toggle-header:hover {
+    color: blue; /* Warna teks berubah menjadi biru saat di-hover */
+}
+
+.table-container {
+    width: 80%; /* Menentukan lebar tabel */
+    max-width: 600px; /* Lebar maksimum tabel */
+    margin: 0 auto; /* Mengatur margin agar tabel berada di tengah secara horizontal */
+    background-color: #ffffff; /* Warna background putih untuk tabel */
+    padding: 20px; /* Ruang sekitar tabel */
+    border-radius: 8px; /* Membuat sudut tabel melengkung */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan halus */
+}
+
+/* Mengatur gaya tabel */
+table {
+    width: 100%; /* Tabel mengisi seluruh lebar container */
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+}
+
+/* Gaya untuk header tabel */
+th {
+    background-color: #4CAF50; /* Warna latar belakang hijau untuk header */
+    color: white; /* Warna teks putih untuk header */
+    padding: 10px; /* Padding di dalam header */
+    text-align: left; /* Teks di header rata kiri */
+}
+
+/* Gaya untuk sel tabel */
+td {
+    padding: 10px; /* Padding di dalam sel tabel */
+    border-bottom: 1px solid #ddd; /* Garis bawah di sel tabel */
+}
+
+/* Mengubah warna baris saat dihover */
+tr:hover {
+    background-color: #f5f5f5; /* Warna latar belakang berubah saat dihover */
+}
+
 .banner-img-1{
     height: 300px;
     background-size: cover;
@@ -63,9 +113,45 @@ nav{
     text-align: -webkit-center;
 }
 
-.profile-img{
+.profile-img-1{
     height: 50px;
-    background-image:url(https://1.bp.blogspot.com/-LKyUjNynNxU/YGtk1gwcvGI/AAAAAAAAARs/E3cqE9XVjSURp14hByD6kdz-MAyKOAprACLcBGAsYHQ/w1200-h630-p-k-no-nu/Pendaftaran%2BIKIP%2BSiliwangi%2BCimahi.jpg);
+    background-image:url(https://i.pinimg.com/236x/77/17/4c/77174c13ba0cc992560518007531a78d.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-img-2{
+    height: 50px;
+    background-image:url(https://i.pinimg.com/236x/8a/41/ea/8a41eaf559fb25cec464d0d94f13d646.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-img-3{
+    height: 50px;
+    background-image:url(https://i.pinimg.com/736x/a1/ef/02/a1ef02b166eb81f7db46f62862911615.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-img-4{
+    height: 50px;
+    background-image:url(https://i.pinimg.com/236x/28/96/57/289657b7adfe56c4b51830102c0889cf.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-img-5{
+    height: 50px;
+    background-image:url(https://i.pinimg.com/236x/98/6f/85/986f85dbb334a660a3bf573b028fcdbd.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -149,4 +235,83 @@ button:hover {
 
 footer{
     text-align: center;
+}
+
+.achievements-container {
+    display: flex; /* Menggunakan Flexbox */
+    flex-wrap: wrap; /* Agar elemen pencapaian dapat membungkus baris baru */
+    justify-content: space-around; /* Memberikan jarak yang sama di sekitar elemen pencapaian */
+    gap: 20px; /* Jarak antar elemen pencapaian */
+}
+
+/* Gaya untuk setiap elemen pencapaian */
+.achievement-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Menyembunyikan konten yang melewati batas elemen */
+    max-width: 250px; /* Lebar maksimal elemen pencapaian */
+    padding: 15px; /* Padding di dalam elemen pencapaian */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+/* Gaya untuk gambar/ikon pencapaian */
+.achievement-item img {
+    width: 80px; /* Ukuran gambar/ikon */
+    height: 80px; /* Menjaga rasio gambar/ikon */
+    margin-bottom: 10px; /* Jarak bawah gambar/ikon */
+}
+
+/* Gaya untuk judul pencapaian */
+.achievement-item h3 {
+    font-size: 18px;
+    margin: 10px 0; /* Margin atas dan bawah */
+}
+
+/* Gaya untuk deskripsi pencapaian */
+.achievement-item p {
+    font-size: 14px;
+    color: #555; /* Warna teks deskripsi */
+}
+.news-container {
+    display: flex; /* Menggunakan Flexbox */
+    flex-wrap: wrap; /* Agar elemen berita dapat membungkus baris baru */
+    justify-content: space-around; /* Jarak antar elemen berita */
+    gap: 20px; /* Jarak antar elemen berita */
+}
+
+/* Gaya untuk setiap elemen berita */
+.news-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Menyembunyikan konten yang melewati batas elemen */
+    max-width: 200px; /* Lebar maksimal elemen berita */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+/* Gaya untuk gambar berita */
+.news-item img {
+    width: 100%; /* Gambar mengisi seluruh lebar elemen berita */
+    height: auto; /* Menjaga rasio gambar */
+}
+
+/* Gaya untuk judul berita */
+.news-item h3 {
+    font-size: 16px;
+    margin: 10px 0; /* Margin atas dan bawah */
+    padding: 0 10px; /* Padding kiri dan kanan */
+}
+
+/* Gaya untuk link agar tidak ada underline dan warna default */
+.news-item a {
+    text-decoration: none; /* Menghapus garis bawah link */
+    color: black; /* Warna teks default */
+    display: block; /* Membuat link mengisi seluruh elemen berita */
+    transition: color 0.3s; /* Transisi halus saat warna berubah */
+}
+
+/* Gaya untuk hover efek */
+.news-item a:hover {
+    color: #007BFF; /* Mengubah warna teks saat di-hover */
 }

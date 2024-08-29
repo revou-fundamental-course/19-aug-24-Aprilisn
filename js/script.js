@@ -1,5 +1,27 @@
 // Ini Javascript
 
+// Menambahkan event listener untuk semua elemen dengan kelas 'toggle-header'
+document.querySelectorAll('.toggle-header').forEach(header => {
+    header.addEventListener('click', () => {
+        // Mendapatkan semua elemen paragraf setelah header yang diklik
+        const paragraphs = header.nextElementSibling;
+
+        // Looping untuk menampilkan atau menyembunyikan paragraf-paragraf
+        while (paragraphs && paragraphs.classList.contains('toggle-paragraph')) {
+            // Mengubah display dari none ke block dan sebaliknya
+            if (paragraphs.style.display === 'none' || paragraphs.style.display === '') {
+                paragraphs.style.display = 'block';
+            } else {
+                paragraphs.style.display = 'none';
+            }
+            
+            // Pindah ke paragraf berikutnya
+            paragraphs = paragraphs.nextElementSibling;
+        }
+    });
+});
+
+
 function submitForm() {
     // Get values from the form
     const name = document.getElementById('name').value;
